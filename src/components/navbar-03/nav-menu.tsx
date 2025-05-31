@@ -3,18 +3,15 @@
 import { Button } from "@/components/ui/button";
 import {
   NavigationMenu,
-  NavigationMenuContent,
   NavigationMenuItem,
   NavigationMenuLink,
   NavigationMenuList,
-  NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu";
 import { cn } from "@/lib/utils";
 import { NavigationMenuProps } from "@radix-ui/react-navigation-menu";
 import { LucideIcon } from "lucide-react";
 import Link from "next/link";
 import React from "react";
-import { foods } from "./config";
 
 export const NavMenu = (props: NavigationMenuProps) => (
   <NavigationMenu {...props}>
@@ -24,24 +21,10 @@ export const NavMenu = (props: NavigationMenuProps) => (
           <Link href="/">Home</Link>
         </Button>
       </NavigationMenuItem>
-      <NavigationMenuItem>
-        <NavigationMenuTrigger className="text-[15px] font-normal">
-          List
-        </NavigationMenuTrigger>
-        <NavigationMenuContent>
-          <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px]">
-            {foods.map((food) => (
-              <ListItem
-                key={food.title}
-                title={food.title}
-                icon={food.icon}
-                href="#"
-              >
-                {food.description}
-              </ListItem>
-            ))}
-          </ul>
-        </NavigationMenuContent>
+            <NavigationMenuItem>
+        <Button variant="ghost" className="text-[15px] font-normal" asChild>
+          <Link href="/list">List</Link>
+        </Button>
       </NavigationMenuItem>
     </NavigationMenuList>
   </NavigationMenu>

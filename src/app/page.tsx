@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowUpRight } from "lucide-react";
 import React from "react";
 
-const Hero01 = () => {
+const Home = () => {
   return (
     <div className="flex items-center justify-center px-6">
       <div className="text-center max-w-2xl">
@@ -22,4 +22,4 @@ const Hero01 = () => {
   );
 };
 
-export default Hero01;
+export default Home;
