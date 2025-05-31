@@ -4,7 +4,7 @@ import React from "react";
 
 const Hero01 = () => {
   return (
-    <div className="mt-50 mb-50 flex items-center justify-center px-6">
+    <div className="flex items-center justify-center px-6">
       <div className="text-center max-w-2xl">
         <h1 className="mt-6 text-4xl sm:text-5xl md:text-6xl md:leading-[1.2] font-bold">
           Todolist Application

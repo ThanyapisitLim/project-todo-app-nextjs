@@ -21,7 +21,7 @@ const footerLinks = [
 
 const Footer04Page = () => {
   return (
-    <div className="flex flex-col">
+    <div className="mt-50 flex flex-col">
       <div className="grow bg-muted" />
       <footer>
         <div className="max-w-screen-xl mx-auto">

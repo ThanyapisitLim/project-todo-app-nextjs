@@ -6,7 +6,7 @@ import { ArrowUpRight } from "lucide-react";
 
 const Navbar03Page = () => {
   return (
-    <div className="bg-muted">
+    <div className="mb-50 bg-muted">
       <nav className="h-16 bg-background border-b">
         <div className="h-full flex items-center justify-between max-w-screen-lg mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center gap-8">
